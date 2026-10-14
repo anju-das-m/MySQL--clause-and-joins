@@ -1,6 +1,7 @@
 select distinct salary from employees;
 select age as "Employee_age", salary as "Employee_salary" from employees;
 select * from employees where salary > 50000 and hire_date <"2016-01-01";
+select * from employees where designation is null;
 update employees set designation ="Data scientist" where designation is null;
 set sql_safe_updates=0;
 set sql_safe_updates=1;
